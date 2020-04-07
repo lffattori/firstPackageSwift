@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AulaSwiftPackage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Reflexão de um aluno" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5WF-6K-ZxJ">
+                                <rect key="frame" x="55" y="135" width="311" height="183"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="A resposta vai aparecer aqui" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t2r-0c-OYk">
+                                <rect key="frame" x="51" y="389" width="319" height="384"/>
+                                <color key="backgroundColor" red="0.98436028338578685" green="0.84254952808524486" blue="0.43096479285493605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qby-5y-FeA">
+                                <rect key="frame" x="166" y="339" width="82" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Gerar">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCh-1C-erV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t2r-0c-OYk" secondAttribute="bottom" constant="89" id="Cvv-Do-1Fr"/>
+                            <constraint firstItem="t2r-0c-OYk" firstAttribute="top" secondItem="qby-5y-FeA" secondAttribute="bottom" constant="20" id="Fsq-IN-hrU"/>
+                            <constraint firstItem="qby-5y-FeA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="KQ0-SP-in2"/>
+                            <constraint firstItem="5WF-6K-ZxJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="SRa-F4-SxU"/>
+                            <constraint firstItem="qby-5y-FeA" firstAttribute="top" secondItem="5WF-6K-ZxJ" secondAttribute="bottom" constant="21" id="eYD-g5-49D"/>
+                            <constraint firstItem="t2r-0c-OYk" firstAttribute="centerX" secondItem="5WF-6K-ZxJ" secondAttribute="centerX" id="etv-6a-tDr"/>
+                            <constraint firstItem="t2r-0c-OYk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="uY0-H5-jzE"/>
+                            <constraint firstItem="qby-5y-FeA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="339" id="wzy-fA-Z7o"/>
+                            <constraint firstItem="5WF-6K-ZxJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="xCG-NP-152"/>
+                            <constraint firstItem="qby-5y-FeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zLp-4W-VSK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5WF-6K-ZxJ" secondAttribute="trailing" constant="48" id="zZh-fR-OJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerView" destination="t2r-0c-OYk" id="8Qu-zS-1uc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>

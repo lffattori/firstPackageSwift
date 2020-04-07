@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "reflectium-ipsum",
+        "repositoryURL": "https://github.com/JulioBBL/reflectium-ipsum",
+        "state": {
+          "branch": null,
+          "revision": "26c0a9253033cde0330540c67012655a94be1122",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
