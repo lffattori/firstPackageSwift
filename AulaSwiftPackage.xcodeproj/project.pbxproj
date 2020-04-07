@@ -14,6 +14,7 @@
 		25B1B830243D0BE40039AC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B1B82F243D0BE40039AC1E /* Assets.xcassets */; };
 		25B1B833243D0BE40039AC1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B1B831243D0BE40039AC1E /* LaunchScreen.storyboard */; };
 		25B1B83C243D0C7A0039AC1E /* reflectium-ipsum in Frameworks */ = {isa = PBXBuildFile; productRef = 25B1B83B243D0C7A0039AC1E /* reflectium-ipsum */; };
+		25B1B83F243D23420039AC1E /* FirstPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 25B1B83E243D23420039AC1E /* FirstPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B1B83F243D23420039AC1E /* FirstPackage in Frameworks */,
 				25B1B83C243D0C7A0039AC1E /* reflectium-ipsum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +89,7 @@
 			name = AulaSwiftPackage;
 			packageProductDependencies = (
 				25B1B83B243D0C7A0039AC1E /* reflectium-ipsum */,
+				25B1B83E243D23420039AC1E /* FirstPackage */,
 			);
 			productName = AulaSwiftPackage;
 			productReference = 25B1B823243D0BE10039AC1E /* AulaSwiftPackage.app */;
@@ -118,6 +121,7 @@
 			mainGroup = 25B1B81A243D0BE10039AC1E;
 			packageReferences = (
 				25B1B83A243D0C7A0039AC1E /* XCRemoteSwiftPackageReference "reflectium-ipsum" */,
+				25B1B83D243D23410039AC1E /* XCRemoteSwiftPackageReference "myPackage" */,
 			);
 			productRefGroup = 25B1B824243D0BE10039AC1E /* Products */;
 			projectDirPath = "";
@@ -356,6 +360,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		25B1B83D243D23410039AC1E /* XCRemoteSwiftPackageReference "myPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lffattori/myPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -363,6 +375,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 25B1B83A243D0C7A0039AC1E /* XCRemoteSwiftPackageReference "reflectium-ipsum" */;
 			productName = "reflectium-ipsum";
+		};
+		25B1B83E243D23420039AC1E /* FirstPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25B1B83D243D23410039AC1E /* XCRemoteSwiftPackageReference "myPackage" */;
+			productName = FirstPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

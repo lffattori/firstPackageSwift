@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "FirstPackage",
+        "repositoryURL": "https://github.com/lffattori/myPackage.git",
+        "state": {
+          "branch": null,
+          "revision": "8ca299fbfb9eedaf5ad45e02811912e84567cd06",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "reflectium-ipsum",
         "repositoryURL": "https://github.com/JulioBBL/reflectium-ipsum",
         "state": {
